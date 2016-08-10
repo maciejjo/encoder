@@ -28,7 +28,7 @@ static ssize_t encoder_show_distance(struct device *dev,
 		atomic_read(&data->sigs) * DIST_PER_SIG;
 
 	/* distance micrometers */
-	return sprintf(buf, "%llu", distance);
+	return sprintf(buf, "%llu\n", distance);
 }
 
 static ssize_t encoder_store_reset(struct device *dev,
